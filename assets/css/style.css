@@ -93,6 +93,15 @@ section
 }
 
 
+.pic_holder 
+{ 
+    float:left;
+    padding:5px;
+} 
+
+
+
+
 article
 {
     background-color:white;
@@ -102,6 +111,8 @@ article
     padding:20px;
     border: 2px solid grey;
     margin-bottom:75px;
+    overflow: auto;
+    
 
 }
 
@@ -110,6 +121,7 @@ p
 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size:1em;
+    line-height: 2;
 }
 
 
