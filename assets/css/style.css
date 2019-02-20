@@ -100,8 +100,6 @@ section
 } 
 
 
-
-
 article
 {
     background-color:white;
@@ -182,3 +180,30 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+
+
+  .portfolio_box
+  {
+      display:flex;
+      flex-direction:row;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+    
+
+  }
+
+  .portfolio_item
+  {
+     flex:1;
+     align-self: center;
+     padding:10px;
+  }
+
+
+  .portfolio_title{
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size:1em;
+    font-weight: 150;
+    color: teal;
+}
+
