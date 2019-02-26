@@ -1,83 +1,67 @@
-
 body
  {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
      color: #777;
      background-color: white;
-     font-size: 18px;
+     font-size: 1.2em;
      
  }
 
- /* Container Grid with 3 rows and 1 column */
- .container
-{
-    display:grid;
-    padding:0px;
-    grid-template-columns: 1fr;
-    grid-template-rows:  150px auto 50px;
-    height:100vh;
-    width: 100vw;
+ /* Nav is a FlexBox with logo and nav links*/
 
-}
-
-
-/* Nav Bar using FlexBox */
-.nav_row
-{
-    background-color: white;
-    grid-area: 1/1/2/2;   
-    border-bottom: 2px solid #cccccc;
-    vertical-align: baseline;
-    align-self: end;
-}
-
-nav
+ nav
 {
     display:flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: center;
+    border: 3px solid #cccccc; 
+    height:100px;
 }
   
-
-/* Name Tab */
+.logo_container
+{
+    order:1;
+    width: 30vw;
+    align-self: flex-end;
+    text-align: center;
+}
 
 .logo
-{
-
-    order:1;
-    flex-grow:1;
+{   
     background-color: teal;
-    margin-left:100px;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 2em; 
     font-weight: 200;
-    color:black;
-    text-align: center;
-    width:100px;
-    height:100px;
-    padding-top:30px;
+    color:black;   
+    padding:10px;
+
 }
 
-.spacer
+
+.menu
 {
-    flex-grow:2;
     order:2;
+    width: 50vw;
+    align-self:center;
+    text-align: center;
 }
 
 .nav_links
 {
-    margin-top:50px;
-    flex-grow:1;    
-   order:3;
-   align-self: flex-start;
-   
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2em;
+    color: teal;
+    margin-top:10px;
+
 }
+
+/* Styles for Navigation Links */
 
 .nav_items
 {
     text-decoration: none;
+   
 }
 
 a:link { color: teal }
@@ -86,10 +70,23 @@ a:hover { color: black }
 a:active { color: grey }
 
 
+/* Main Container Grid with 2 rows and 1 column */
+.container
+{
+    display:grid;
+    padding:0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 50px;
+    width:  100vw;
+    
+}
+
+
 section
 {
    background-image: url("../images/gravel.png");
-    grid-area: 2/1/3/2;
+    grid-area: 1/1/2/2;
+    min-height: calc(100vh - 150px);
 }
 
 
@@ -97,23 +94,29 @@ section
 { 
     float:left;
     padding:5px;
+    width:200px;
+    height:200px;
 } 
+
+
+.profile_pic
+{
+    max-width:100%;
+    max-height:100%;
+}
 
 
 article
 {
     background-color:white;
     margin: 0px auto;
-    margin-top:75px;
+    margin-top:50px;
     width:75%;
     padding:20px;
     border: 2px solid grey;
-    margin-bottom:75px;
-    overflow: auto;
-    
-
+    overflow: auto;   
+    margin-bottom:20px; 
 }
-
 
 p
 {
@@ -121,8 +124,6 @@ p
     font-size:1em;
     line-height: 2;
 }
-
-
 
 h1.title{
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -139,7 +140,7 @@ footer
 {  
 border-top: 6px solid teal;
   background-color: #666666;
-  grid-area: 3/1/4/2;
+  grid-area: 2/1/3/2;
   align-items: center;
   padding: 10px;
 }
@@ -151,9 +152,12 @@ color:black;
 text-align: center;
 }
 
+/* Styles for Contact Form */
+
+
 .form_container
 {
-    margin:20px;
+    margin:30px;
 }
 
 
@@ -166,7 +170,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
+}
   
   input[type=submit] {
     background-color: #4CAF50;
@@ -181,14 +185,13 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
 
-
+/* Styles for Portfolio Page */
   .portfolio_box
   {
       display:flex;
       flex-direction:row;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-flow: row wrap;
-    
 
   }
 
@@ -206,4 +209,91 @@ input[type=text], select, textarea {
     font-weight: 150;
     color: teal;
 }
+
+
+/* Width at 640px and below  */
+@media only screen and (max-width: 640px) {
+
+
+    /* Change Nav Row to Column for smaller screens */
+    nav
+    {
+        display:flex;
+        flex-direction: column;
+        margin:0px;
+        height:100px;
+    }
+      
+    .logo_container
+    {
+        order:1;
+        width: 100vw;
+        text-align: center;
+        height:60px;
+        align-self: center;
+    }
+    
+    .logo
+    {   
+        background-color: teal;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 1.8em; 
+        font-weight: 200;
+        color:black;   
+        padding:5px;
+    }
+    
+    .menu
+    {
+        order:2;
+        width: 100vw;
+        text-align: center;
+        height:40px;
+        align-self: center;
+    }
+
+
+
+    .pic_holder 
+    { 
+        padding:10px;
+        width:300px;
+        height:300px;
+    } 
+
+
+    article
+    {
+        margin: 0px auto;
+        margin-top:20px;
+        width:90%;
+        padding:20px;
+        border: 2px solid grey;
+        overflow: auto;  
+        margin-bottom:20px;  
+        text-align: left;
+    }
+
+
+    .nav_links
+    {
+        margin-top:0px;
+    }
+
+
+.portfolio_box
+  {
+      flex-direction:column;
+      justify-content: center;
+  }
+
+  .portfolio_item
+  {
+     flex:1;
+     align-self: center;
+     padding:10px;
+  }
+
+}
+/* End of Media Query 640px */  
 
