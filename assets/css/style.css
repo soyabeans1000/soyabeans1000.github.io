@@ -18,14 +18,6 @@ body
     width: 100vw;
 }
 
-nav
-{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
-}
 
 /* Nav Bar using FlexBox */
 .nav_row
@@ -37,6 +29,17 @@ nav
     align-self: end;
 }
 
+
+nav
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
 .logo_container
 {
     order:1;
@@ -46,21 +49,6 @@ nav
     margin-left:30px;
 }
 
-.menu
-{
-    order:2;
-    width: 50vw;
-    align-self:center;
-    text-align: center;
-}
-
-
-
-
-
-
-
-  
 
 /* Name Tab */
 
@@ -73,6 +61,14 @@ nav
     color:black;   
     padding:10px;
 
+}
+
+.menu
+{
+    order:2;
+    width: 50vw;
+    align-self:center;
+    text-align: center;
 }
 
 
