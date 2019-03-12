@@ -220,6 +220,8 @@ input[type=text], select, textarea {
     color: teal;
 }
 
+
+
 /* Width at 640px and below  */
 @media only screen and (max-width: 640px) {
 
@@ -290,7 +292,9 @@ input[type=text], select, textarea {
   {
      flex:1;
      align-self: center;
-     padding:10px;
+     height:50%;
+     width:auto;
+
   }
 
 
@@ -300,6 +304,8 @@ input[type=text], select, textarea {
     height:250px;
     width:250px;
 } 
+
+
 
 }
 /* End of Media Query 640px */  
