@@ -1,7 +1,8 @@
-# soyabeans1000.github.io
+# Responsive Portfolio
 
 
-Portfolio site made using CSS Grids
+Portfolio site made using CSS Grids and CSS Flexbox
+
 
 Pages:
 
