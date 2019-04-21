@@ -30,24 +30,6 @@ p {
   }
 
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-
-} 
-/* end Media Query */
-
 .icon-block {
   padding: 0 15px;
 }
@@ -89,3 +71,52 @@ footer.page-footer {
 {
   min-height:86vh;
 }
+
+
+/* Media Queries */
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  @media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .portfolio_text
+  {
+    font-size:1em;
+  }
+
+} 
+/* end Media Query */
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .portfolio_text
+  {
+    font-size:1em;
+  }
+
+
+} 
+/* end Media Query */
