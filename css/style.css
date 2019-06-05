@@ -5,7 +5,8 @@ font-size:14px;
 
 .portfolio_text
   {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+  
   }
 
 #main
@@ -62,7 +63,7 @@ footer.page-footer {
 
 .cup
 {
-  margin-top:100px;
+  margin-top:10vh;
   height:50%;
   width:auto;
   /* border: blue 2px dotted; */
@@ -111,7 +112,7 @@ footer.page-footer {
 
   .portfolio_text
   {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   
